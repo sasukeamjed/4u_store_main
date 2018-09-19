@@ -26,7 +26,7 @@ class _SearchState extends State<Search> {
               color: Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(5.0)),
             ),
-            child: Text('Search...'),
+            child: Center(child: Text('Search...')),
           ),
         ],
       ),
