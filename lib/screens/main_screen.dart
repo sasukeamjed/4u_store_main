@@ -3,6 +3,7 @@ import 'home.dart';
 import 'search.dart';
 import 'cart.dart';
 import 'profile.dart';
+import 'more.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -18,7 +19,8 @@ class MainScreenState extends State<MainScreen> {
     HomePlaceholderWidget(),
     SearchPlaceholderWidget(),
     CartPlaceholderWidget(),
-    ProfilePlaceholderWidget()
+    ProfilePlaceholderWidget(),
+    MorePlaceholderWidget(),
   ];
 
   @override
@@ -43,7 +45,13 @@ class MainScreenState extends State<MainScreen> {
             title: Text('Cart'),
           ),
           new BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Profile')),
+            icon: Icon(Icons.person),
+            title: Text('Profile'),
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(Icons.more_horiz),
+            title: Text('More'),
+          ),
         ],
       ),
     );
@@ -89,6 +97,15 @@ class ProfilePlaceholderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Profile(),
+    );
+  }
+}
+
+class MorePlaceholderWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: More(),
     );
   }
 }

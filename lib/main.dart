@@ -8,7 +8,7 @@ main(){
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown
   ]);
-  //debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = false;
   runApp(App());
 }
 
